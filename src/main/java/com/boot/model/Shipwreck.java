@@ -5,22 +5,22 @@ public class Shipwreck {
 	String name;
 	String role;
 	String questions;
-	Integer depth;
+	String feedback;
 	String scheduledAt;
 	Double longitude;
-	Integer yearDiscovered;
+	String rating;
 
 	public Shipwreck() { }
 
-	public Shipwreck(Long id, String name, String role, String questions, Integer depth, String scheduledAt, Double longitude, Integer yearDiscovered) {
+	public Shipwreck(Long id, String name, String role, String questions, String feedback, String scheduledAt, Double longitude, String rating) {
 		this.id = id;
 		this.name = name;
 		this.role = role;
 		this.questions = questions;
-		this.depth = depth;
+		this.feedback = feedback;
 		this.scheduledAt = scheduledAt;
 		this.longitude = longitude;
-		this.yearDiscovered = yearDiscovered;
+		this.rating = rating;
 	}
 
 	public Long getId() {
@@ -55,12 +55,12 @@ public class Shipwreck {
 		this.questions = questions;
 	}
 
-	public Integer getDepth() {
-		return depth;
+	public String getFeedback() {
+		return feedback;
 	}
 
-	public void setDepth(Integer depth) {
-		this.depth = depth;
+	public void setFeedback(String feedback) {
+		this.feedback = feedback;
 	}
 
 	public String getScheduledAt() {
@@ -79,11 +79,11 @@ public class Shipwreck {
 		this.longitude = longitude;
 	}
 
-	public Integer getYearDiscovered() {
-		return yearDiscovered;
+	public String getRating() {
+		return rating;
 	}
 
-	public void setYearDiscovered(Integer yearDiscovered) {
-		this.yearDiscovered = yearDiscovered;
+	public void setRating(String rating) {
+		this.rating = rating;
 	}
 }

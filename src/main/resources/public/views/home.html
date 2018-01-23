@@ -1,23 +1,50 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container text-center">
-        <h2>Interviews</h2>
-        <img src="/images/shipwreck.jpg" class="img-rounded img-responsive"/>
-      </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+</head>
+<div class="jumbotron">
+    <div class="container text-center">
+        <!--<h2>Interviews</h2>-->
+        <!--<img src="/images/shipwreck.jpg" class="img-rounded img-responsive"/>-->
+        <div class="container">
+
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Hiring Portal Sign in</h2>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <p><a class="btn btn-lg btn-primary btn-block" href="#/shipwrecks" role="button">Login &raquo;</a></p>
+                <!--<a><button class="btn btn-lg btn-primary btn-block" href="#/shipwrecks" type="submit">Sign in</button></a>-->
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <!--<p><a class="btn btn-default" href="#/shipwrecks" role="button">Login &raquo;</a></p>-->
+        </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h2>Shipwreck List</h2>
-          <p><a class="btn btn-default" href="#/shipwrecks" role="button">Click Here! &raquo;</a></p>
-        </div>
-      </div>
+    <hr>
 
-      <hr>
-
-      <footer>
-        <p>&copy; Awesome!</p>
-      </footer>
-    </div> <!-- /container -->
+</div> <!-- /container -->

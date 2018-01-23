@@ -13,11 +13,11 @@ public class ShipwreckStub {
 
 	//populate initial wrecks
 	static {
-		Shipwreck a = new Shipwreck(1L, "Shivam Srivastava", "QA Engineer 3", "", 80, "29th Jan-11:00 am", 138.44, 1994);
+		Shipwreck a = new Shipwreck(1L, "Shivam Srivastava", "QA Engineer 3", "", "", "Jan 29 - 11:00 AM", 138.44, "");
 		wrecks.put(1L, a);
-		Shipwreck b = new Shipwreck(2L, "Shivam Srivastava", "QA Engineer 3", "", 80, "29th Jan-11:00 am", 138.44, 1994);
+		Shipwreck b = new Shipwreck(2L, "Shivam Srivastava", "QA Engineer 3", "", "", "Feb 12 - 15:00 PM", 138.44, "");
 		wrecks.put(2L, b);
-		Shipwreck c = new Shipwreck(3L, "Arpit Pandey", "Customer Happiness Engineer", "", 50, "29th Jan-11:00 am", 138.44, 1994);
+		Shipwreck c = new Shipwreck(3L, "Arpit Pandey", "Customer Happiness Engineer", "", "", "Feb 15 - 13:00 PM", 138.44, "");
 		wrecks.put(3L, c);
 	}
 
