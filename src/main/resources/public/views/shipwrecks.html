@@ -5,12 +5,18 @@
           <td><h3>Scheduled Interviews</h3></td>
           <td></td>
       </tr>
+      <td><h4>Name</h4></td>
+      <td><h4>Designation</h4></td>
+      <td><h4>Scheduled At</h4></td>
+      <td><h4>            </h4></td>
+
       <tr ng-repeat="shipwreck in shipwrecks">
           <td>{{shipwreck.name}}</td>
-          <td>{{shipwreck.description}}</td>
+          <td>{{shipwreck.role}}</td>
+          <td>{{shipwreck.scheduledAt}}</td>
           <td>
               <a class="btn btn-primary" ui-sref="viewShipwreck({id:shipwreck.id})">View Interview Details</a>
-              <a class="btn btn-primary" ui-sref="editShipwreck({id:shipwreck.id})">Edit</a>
+              <a class="btn btn-success" ui-sref="editShipwreck({id:shipwreck.id})">Start</a>
               <!--<a class="btn btn-primary" ui-sref="newShipwreck" class="btn-primary btn-lg nodecoration">Interview Details</a>-->
               <!--<a class="btn btn-danger"  ng-click="deleteShipwreck(shipwreck)">Delete</a>-->
           </td>

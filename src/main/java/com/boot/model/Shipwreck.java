@@ -3,22 +3,22 @@ package com.boot.model;
 public class Shipwreck {
 	Long id;
 	String name;
-	String description;
-	String condition;
+	String role;
+	String questions;
 	Integer depth;
-	Double latitude;
+	String scheduledAt;
 	Double longitude;
 	Integer yearDiscovered;
 
 	public Shipwreck() { }
 
-	public Shipwreck(Long id, String name, String description, String condition, Integer depth, Double latitude, Double longitude, Integer yearDiscovered) {
+	public Shipwreck(Long id, String name, String role, String questions, Integer depth, String scheduledAt, Double longitude, Integer yearDiscovered) {
 		this.id = id;
 		this.name = name;
-		this.description = description;
-		this.condition = condition;
+		this.role = role;
+		this.questions = questions;
 		this.depth = depth;
-		this.latitude = latitude;
+		this.scheduledAt = scheduledAt;
 		this.longitude = longitude;
 		this.yearDiscovered = yearDiscovered;
 	}
@@ -39,20 +39,20 @@ public class Shipwreck {
 		this.name = name;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getRole() {
+		return role;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setRole(String role) {
+		this.role = role;
 	}
 
-	public String getCondition() {
-		return condition;
+	public String getQuestions() {
+		return questions;
 	}
 
-	public void setCondition(String condition) {
-		this.condition = condition;
+	public void setQuestions(String questions) {
+		this.questions = questions;
 	}
 
 	public Integer getDepth() {
@@ -63,12 +63,12 @@ public class Shipwreck {
 		this.depth = depth;
 	}
 
-	public Double getLatitude() {
-		return latitude;
+	public String getScheduledAt() {
+		return scheduledAt;
 	}
 
-	public void setLatitude(Double latitude) {
-		this.latitude = latitude;
+	public void setScheduledAt(String scheduledAt) {
+		this.scheduledAt = scheduledAt;
 	}
 
 	public Double getLongitude() {
