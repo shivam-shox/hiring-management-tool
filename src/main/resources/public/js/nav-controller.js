@@ -4,6 +4,7 @@ angular.module('navController', [])
 
 		// returns true if the current router url matches the passed in url
 		// so views can set 'active' on links easily
+
 		$scope.isUrl = function(url) {
 			if (url === '#') return false;
 			return ('#' + $state.$current.url.source + '/').indexOf(url + '/') === 0;
@@ -12,11 +13,12 @@ angular.module('navController', [])
 		$scope.pages = [
 			{
 				name: 'Home',
-				url: '#/'
-			},
-			{
-				name: 'Shipwrecks',
 				url: '#/shipwrecks'
 			}
+			// ,
+			// {
+			// 	name: 'Shipwrecks',
+			// 	url: '#/shipwrecks'
+			// }
 		]
 	});
