@@ -1,6 +1,6 @@
 package com.boot.model;
 
-public class Shipwreck {
+public class Hiring {
 	Long id;
 	String name;
 	String role;
@@ -10,9 +10,9 @@ public class Shipwreck {
 	Double longitude;
 	String rating;
 
-	public Shipwreck() { }
+	public Hiring() { }
 
-	public Shipwreck(Long id, String name, String role, String questions, String feedback, String scheduledAt, Double longitude, String rating) {
+	public Hiring(Long id, String name, String role, String questions, String feedback, String scheduledAt, Double longitude, String rating) {
 		this.id = id;
 		this.name = name;
 		this.role = role;

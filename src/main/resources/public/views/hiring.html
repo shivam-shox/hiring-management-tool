@@ -1,6 +1,6 @@
 <body>
 <div class="container pad-top">
-  <!--<a ui-sref="newShipwreck" class="btn-primary btn-lg nodecoration">Add New Shipwreck</a>-->
+  <!--<a ui-sref="newShipwreck" class="btn-primary btn-lg nodecoration">Add New Hiring</a>-->
   <table class="table shipwrecktable">
       <tr>
           <td><h3>Scheduled Interviews</h3></td>
@@ -11,7 +11,7 @@
       <td><h4>Scheduled At</h4></td>
       <td><h4>            </h4></td>
 
-      <tr ng-repeat="shipwreck in shipwrecks">
+      <tr ng-repeat="shipwreck in hiring">
           <td>{{shipwreck.name}}</td>
           <td>{{shipwreck.role}}</td>
           <td>{{shipwreck.scheduledAt}}</td>
